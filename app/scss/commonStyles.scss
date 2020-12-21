@@ -1,0 +1,23 @@
+//App Custom Variable 
+@import "custom-variable";
+//Include mixins
+@import "utils";
+body, html {
+    font-family: $fontFamily;
+}
+a,a:hover {
+    text-decoration: none;
+}
+input, input:focus, input:active
+button, button:focus, button:active {
+    outline: none;
+}
+ul {
+    @include resetList;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    @include wrapper;
+}
